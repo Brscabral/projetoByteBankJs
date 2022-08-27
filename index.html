@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="corpo">
+    <header class="cabecalho">Byte Bank</header>
+    <div class="conteiner">
+        <h1>Cadastro de clientes</h1>
+        <form class="formulario">
+            <label for="inputName">Nome</label>
+            <input type="text" id="inputName" placeholder="Digite seu nome">
+
+            <label for="inputDocument">CPF</label>
+            <input type="text" id="inputDocument" placeholder="xxx.xxx.xxx-xx" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
+
+            <label for="inputSaldo">Saldo</label>
+            <input type="number" id="inputSaldo">
+            <button type="submit" id="btn">Cadastrar!</button>
+        </form>   
+        
+    </div>
+    <footer class="rodape">
+        <p>Cel: (88)999-999-99</p>
+        <p>email: dominio@gmail.com</p>
+    </footer>    
+</body>
+</html>
