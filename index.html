@@ -11,22 +11,24 @@
     <header class="cabecalho">Byte Bank</header>
     <div class="conteiner">
         <h1>Cadastro de clientes</h1>
-        <form class="formulario">
-            <label for="inputName">Nome</label>
+        <div class="formulario">
+            
+            <label>Nome</label>
             <input type="text" id="inputName" placeholder="Digite seu nome">
 
-            <label for="inputDocument">CPF</label>
-            <input type="text" id="inputDocument" placeholder="xxx.xxx.xxx-xx" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
+            <label>CPF</label>
+            <input type="text" id="inputDocument" placeholder="xxx.xxx.xxx-xx">
 
-            <label for="inputSaldo">Saldo</label>
+            <label>Saldo</label>
             <input type="number" id="inputSaldo">
             <button type="submit" id="btn">Cadastrar!</button>
-        </form>   
+        </div>   
         
     </div>
     <footer class="rodape">
         <p>Cel: (88)999-999-99</p>
         <p>email: dominio@gmail.com</p>
     </footer>    
+    <script src="classe.js"></script>
 </body>
 </html>
