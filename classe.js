@@ -58,7 +58,7 @@ function validaCamp(cliente){
     }
   
     if(msg != ''){
-        alert(msg)
+        alert("Por favor, preencha os campos vazios para efetuar seu cadastro")
         return false
     }
 
