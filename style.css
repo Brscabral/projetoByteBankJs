@@ -66,3 +66,9 @@
     height: auto;
     background-color: #4169E1;
 }
+button{
+    width: 35%;
+    padding: 5px;
+    background-color: #4169E1;
+    margin: 5px;
+}
