@@ -45,7 +45,25 @@ function pegaInfo(){
 
 }
 
+function validaCamp(cliente){
+    let msg = ""
+    if(cliente.nome==''){
+        msg += "Por favor, Informe um nome para seu cadastro \n"   
+    }
+    if(cliente.documento==''){
+        msg += "Por favor, Informe seu cpf para seu cadastro \n"   
+    }
+    if(cliente.saldo ==''){
+        msg += "Por favor, informe seu saldo \n";
+    }
+  
+    if(msg != ''){
+        alert(msg)
+        return false
+    }
 
+    return true
+}
 
 function addArray(){
     let classe = pegaInfo()
@@ -108,7 +126,7 @@ function mostraClasse(){
         spanCpfCliente.textContent = `CPF:  ${objetoClasse.documento} | `;
         spanSaldoCliente.textContent = `Saldo:  ${objetoClasse.saldo}  `;
     
-        // Isso aqui é a mesma coisa de fazer "appendChild" 3 vezes. (nesse caso)
+       
         li.replaceChildren(spanNomeCliente, spanCpfCliente, spanSaldoCliente);
 
         
@@ -151,7 +169,12 @@ function mostraClasse(){
 }
 
 btn.addEventListener('click', ()=>{
-    mostraClasse()
+    let objetoClasse = pegaInfo()
+    let valida = validaCamp(objetoClasse)
+    if(valida){
+        mostraClasse();
+    }
+    
     
    
 })
