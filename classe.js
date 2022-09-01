@@ -156,7 +156,7 @@ function mostraClasse(){
             if(acao){
                 saldoInicia = objetoClasse.saque(100);
                
-                spanSaldoCliente.textContent = `Cliente: ${objetoClasse.saldo}`;
+                spanSaldoCliente.textContent = `Saldo: ${objetoClasse.saldo}`;
            
             }
        });
